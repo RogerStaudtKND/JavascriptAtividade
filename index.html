@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Atividade 1</legend>
+            <section class="campo">
+                <label for="atv1-dia">Dias</label>
+                <input type="number" id="atv1-dia" placeholder="Digite o dia">
+            </section>
+            <section class="campo">
+                <label for="atv1-mes">Meses</label>
+                <input type="number" id="atv1-mes" placeholder="Digite o mes">
+            </section>
+            <section class="campo">
+                <label for="atv1-ano">Anos</label>
+                <input type="number" id="atv1-ano" placeholder="Digite o ano">
+            </section>
+            <br>
+            <button onclick="atividade1()">Executar</button>
+            <section class="campo">
+                <label for="textarea1">Resultados</label>
+                <textarea name="message" id="textarea1" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 2</legend>
+            <section class="campo">
+                <label for="atv2-nota1">Nota 1</label>
+                <input type="number" id="atv2-nota1" placeholder="Digite a nota">
+            </section>
+            <section class="campo">
+                <label for="atv2-nota2">Nota 2</label>
+                <input type="number" id="atv2-nota2" placeholder="Digite a nota">
+            </section>
+            <section class="campo">
+                <label for="atv2-nota3">Nota 3</label>
+                <input type="number" id="atv2-nota3" placeholder="Digite a nota">
+            </section>
+            <section class="campo">
+                <label for="atv2-nota4">Nota 4</label>
+                <input type="number" id="atv2-nota4" placeholder="Digite a nota">
+            </section>
+            <br>
+            <button onclick="atividade2()">Executar</button>
+            <section class="campo">
+                <label for="textarea2">Resultados</label>
+                <textarea name="message" id="textarea2" cols="30" rows="10" readonly class="msg-nota"></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 3</legend>
+            <section class="campo">
+                <label for="atv3-numeroIp">Número</label>
+                <input type="number" id="atv3-numeroIp" placeholder="Digite o numero">
+            </section>
+            <br>
+            <button onclick="atividade3()">Executar</button>
+            <section class="campo">
+                <label for="textarea3">Resultados</label>
+                <textarea name="message" id="textarea3" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 4</legend>
+            <section class="campo">
+                <label for="atv-4-user">Usuário</label>
+                <input type="text" id="atv-4-user" placeholder="Digite o usuário">
+            </section>
+            <section class="campo">
+                <label for="atv-4-senha">Senha</label>
+                <input type="text" id="atv-4-senha" placeholder="Digite a senha">
+            </section>
+            <br>
+            <button onclick="atividade4()">Executar</button>
+            <section class="campo">
+                <label for="textarea4">Resultados</label>
+                <textarea name="message" id="textarea4" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 5</legend>
+            <section class="campo">
+                <label for="atv5-senha">Digite uma senha</label>
+                <input type="text" id="atv5-senha" placeholder="Senha">
+            </section>
+            <br>
+            <button onclick="atividade5()">Executar</button>
+            <section class="campo">
+                <label for="textarea5">Resultados</label>
+                <textarea name="message" id="textarea5" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 6</legend>
+            <section class="campo">
+                <label for="atv6-grau">Digite o grau Fahrenheit</label>
+                <input type="text" id="atv6-grau" placeholder="Grau">
+            </section>
+            <br>
+            <button onclick="atividade6()">Executar</button>
+            <section class="campo">
+                <label for="textarea6">Resultados</label>
+                <textarea name="message" id="textarea6" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 7</legend>
+            <section class="campo">
+                <label for="atv7-a">Valor A</label>
+                <input type="text" id="atv7-a" placeholder="A">
+            </section>
+            <section class="campo">
+                <label for="atv7-b">Valor B</label>
+                <input type="text" id="atv7-b" placeholder="B">
+            </section>
+            <section class="campo">
+                <label for="atv7-c">Valor C</label>
+                <input type="text" id="atv7-c" placeholder="C">
+            </section>
+            <br>
+            <button onclick="atividade7()">Executar</button>
+            <section class="campo">
+                <label for="textarea7">Resultados</label>
+                <textarea name="message" id="textarea7" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Atividade 8</legend>
+            <section class="campo">
+                <label for="atv8-frase">Frase</label>
+                <input type="text" id="atv8-frase" placeholder="Escreava uma frase">
+            </section>
+            <br>
+            <button onclick="atividade8()">Executar</button>
+            <section class="campo">
+                <label for="textarea8">Resultados</label>
+                <textarea name="message" id="textarea8" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 9</legend>
+            <section class="campo">
+                <label for="atv9-salario">Salário</label>
+                <input type="text" id="atv9-salario" placeholder="Escreava o salário">
+            </section>
+            <section class="campo">
+                <label for="atv9-comissao">Comissão</label>
+                <input type="text" id="atv9-comissao" placeholder="Escreava a comissão">
+            </section>
+            <section class="campo">
+                <label for="atv9-carro">Quantidade Carros</label>
+                <input type="text" id="atv9-carro" placeholder="Escreava os carros">
+            </section>
+            <section class="campo">
+                <label for="atv9-valor">Valor carros</label>
+                <input type="text" id="atv9-valor" placeholder="Escreava o valor">
+            </section>
+            <br>
+            <button onclick="atividade9()">Executar</button>
+            <section class="campo">
+                <label for="textarea9">Resultados</label>
+                <textarea name="message" id="textarea9" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 10</legend>
+            <button onclick="atividade10()">Executar</button>
+            <section class="campo">
+                <label for="textarea10">Resultados</label>
+                <textarea name="message" id="textarea10" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Atividade 11</legend>
+            <section class="campo">
+                <label for="atv11-capital">Digite o capital</label>
+                <input type="text" id="atv11-capital" placeholder="Capital">
+            </section>
+            <section class="campo">
+                <label for="atv11-tempo">Digite o tempo</label>
+                <input type="text" id="atv11-tempo" placeholder="Tempo">
+            </section>
+            <section class="campo">
+                <label for="atv11-juros">Digite os juros</label>
+                <input type="text" id="atv11-juros" placeholder="Juros">
+            </section>
+            <br>
+            <button onclick="atividade11()">Executar</button>
+            <section class="campo">
+                <label for="textarea11">Resultados</label>
+                <textarea name="message" id="textarea11" cols="30" rows="10" readonly></textarea>
+            </section>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

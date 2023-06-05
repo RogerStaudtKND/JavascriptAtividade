@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-top: 150px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+.campo label, input {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+}
+
+button {
+    padding: 5px 10px;
+}
