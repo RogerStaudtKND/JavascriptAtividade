@@ -166,7 +166,7 @@ function atividade4() {
 
     if (nameUser.value != 'KUNDEN') {
 
-        alert('O usuário está incorreto')
+        messageUser.innerHTML = 'O usuário está incorreto!'
         nameUser.focus()
         return 
             
@@ -174,7 +174,7 @@ function atividade4() {
 
     if (passUser.value != 'KUNDENJS2023') {
 
-        alert('A senha está incorreta')
+        messageUser.innerHTML = 'A senha está incorreta!'
         passUser.focus() 
         return         
 
